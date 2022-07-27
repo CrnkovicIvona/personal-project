@@ -24,8 +24,8 @@ section { /*odredila širinu i visinu da stane potpuno u prvi prikaz, boje i ani
 
 h1{
     font-size:5rem;
-    letter-spacing: 2px;
-    border: 3px solid #fff;
+    letter-spacing: 2px;/*razmak između slova*/
+    border: 3px solid #fff;/*okvir*/
     position: absolute;
     top:50%;
     left:50%;
@@ -35,16 +35,76 @@ h1{
 }
 
 h2{
-    font-size:50px;
+    font-size:5rem;
     text-align: center;
-    color: black;
-    background-size: 400% 400%;
+    color: rgb(0, 0, 0);
+}
+
+p{
+    font-family: sans-serif;
+    font-size:16px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+li{
+    font-family: sans-serif;
+    font-size:16px;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+}
+
+.main-btn {
+    text-decoration:none I !important;
+     color: white;
 }
 
 
 body{
     margin:0;
     line-height: 1.1;/*određuje širinu bijelog obruba*/
+}
+
+
+.arrow{
+    position: absolute;
+    top:93%;
+    left: 50%;
+}
+
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #efefef;/*kreira crtu određene debljine*/
+    border-right: 5px solid #efefef;/*kreira crtu određene debljine*/
+    transform: rotate(45deg);/*rotira za određeno stupnjeva*/
+    margin: -10p;
+    animation: scroll 2s infinite;
+}
+
+.arrow span:nth-child(2){
+    animation:-.2 ;
+}
+
+@keyframes scroll {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
 }
 
 main {
