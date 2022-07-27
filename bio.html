@@ -58,12 +58,13 @@
             animation: pulse 1.3s infinite;
         }
 
-
         #main-footer {
             text-align: center;
+            float: left;
             font-size: 18px;
             padding-top: 1em;
         }
+
     </style>
 
 </head>
@@ -99,44 +100,62 @@
                 </div>
             </a>
 
-
         </article>
     </section>
 
     <main>
-        <div id="aboutMe" class="o meni">
-            <br>
-            <br>
+        <div id="aboutMe">
             <h2>
                 About me
             </h2>
-            <br>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quas ipsa nostrum non officia, quam
-                eaque sint libero saepe ea in reiciendis deleniti ad voluptates, soluta laboriosam repudiandae
-                voluptatibus aut?
+                Hi! My name is Ivona, junior <abbr title="Synonyms: SDET, Software Test Engineer, Software QA Engineer, Software Quality Engineer, Applications Tester, QA Tester etc.">software tester</abbr> from Croatia.
             </p>
             <br>
+            <p>
+                This page is my personal project to showcase my self-taught basic knowledge of HTML, CSS and JavaScript.
+            </p>
+        </div>
+
+        <div class="avatar">
+            <img src="avatar.1.png" alt="avatar">
+        </div>
+    
+        <div class="sidebar">
             <h2>
                 Skills
             </h2>
             <br>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quas ipsa nostrum non officia, quam
-                eaque sint libero saepe ea in reiciendis deleniti ad voluptates, soluta laboriosam repudiandae
-                voluptatibus aut?
-            </p>
-            <li>gdsfs</li>
-            <li>gdsfs</li>
-            <li>gdsfs</li>
-            <li>gdsfs</li>
+            <li>Advanced SQL</li>
+            <br>
+            <li>Manual testing</li>
+            <br>
+            <li>BUG reporting</li>
+            <br>
+            <li>SoapUI</li>
+            <br>
+            <li>Writing application documentation</li>
+            <br>
+            <li>Test Case and Test Scenario</li>
+            <br>
+            <li>Basic CSS, HTML and JavaScript</li>
+            <br>
+            <li>Canva</li>
+            <br>
+            <li>Basic GIT</li>
+            <br>
+            <li>Digital marketing</li>
+            <br>
+            <li>Business correspondence</li>
         </div>
+
     </main>
 
-    <footer id="main-footer">
-        <!--id je unique-->
-        Copyright &copy; 2022, My Website
+    <footer id="main-footer"><!--id je unique-->
+            <script>
+                const d= new Date (); 
+                document.getElementById('main-footer').innerHTML='Copyright &copy;'+d.getFullYear()+ ', Ivona Crnković';
+            </script>
     </footer>
-</body>
-
-</html>
+    
+    
