@@ -5,29 +5,28 @@
         <link rel="stylesheet" href="bio.css"/>
         
         <style type="text/css"> /*korišten internal css i komentiranje za css*/
+            .ime{
+                text-transform: uppercase;/*velika slova za ime i prezime*/
+            }
+
+            .zanimanje{
+                text-align:center;/*softver tester centrirano*/
+            }
+            .head-icons{
+                display: flex;
+                justify-content: center;/*centrira*/
+                position: absolute;
+                width: 80%;/*lijevo-desno*/
+                top: 47%;/*gore-dolje*/
+                left: 10%;/*lijevo-desno*/
+                margin: 0 auto;
+                transform: scale(.20);/*veličina ikonica*/
+            }
+
             #main-footer{
                 text-align:center;
                 font-size:18px;
                 padding-top: 1em;
-            }
-
-            .ime{
-                text-transform: uppercase;
-            }
-
-            .zanimanje{
-                text-align:center;
-            }
-            .head-icons{
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                color: #fff;
-                position: absolute;
-                width: 80%;
-                top: 50%;
-                left: 10%;
-                margin: 0 auto;
             }
         </style>  
 
@@ -44,10 +43,10 @@
 
                     <!--ikonice linkedin, github, resume, mail-->
                     <div class="head-icons">
-                        <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/ivona-crnkovi%C4%87/" class="linkedin"><img src="linkedin.png" alt="My sample image" class="image"></a>
-                        <a aria-label="My GitHub Profile" target="_blank" href="#" class="github"><img src="github.png" alt="My sample image" class="image"></a>
-                        <a aria-label="My Resume" target="_blank" href="#" class="resume"></a>
-                        <a aria-label="Send Mail" target="_blank" href="#" class="mail"></a>
+                        <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/ivona-crnkovi%C4%87/" ><img src="linkedin.png" alt="My sample image"></a>
+                        <a aria-label="My GitHub Profile" target="_blank" href="https://github.com/CrnkovicIvona" ><img src="github.png" alt="My sample image"></a>
+                        <a aria-label="My Resume" target="_blank" href="#" ></a>
+                        <a aria-label="Send Mail" target="_blank" href="#" ></a>
                     </div>
                 </article>
             </section>
