@@ -1,38 +1,81 @@
-@import "https://fonts.googleapis.com/css?family=Lato:100";
+/*CSS tools: reset CSS mogu koristiti kako bi maknula deafultne stilove browsera, c/p sa stranice i uređujem po tome*/
 
-*{ /*zvijezdica se odnosi na sve*/
+/*font Lato, font se može učitati i preko linka sa font.google.com, link se samo kopira i zalijepi*/
+@import "https://fonts.googleapis.com/css?family=Lato:100";
+/*zvijezdica se odnosi na sve elemente*/
+*{ 
 margin: 0;
 padding:0;
 box-sizing:border-box;
 }
 
+
+/*određen font slova za html*/
 html {
     font-size:10px;
-    font-family:"Lato", Arial, sans-serif;/*određen font slova*/
+    font-family:"Lato", Arial, sans-serif;
     scroll-behavior: smooth;
 }
 
-section { /*odredila širinu i visinu da stane potpuno u prvi prikaz, boje i animaciju pozadine */
-    width: 100%; /*širina*/
-    height:100vh;/*visina*/
-    color:#fff; /*boja slova bijela*/
+
+/*odredila širinu i visinu da stane potpuno u prvi prikaz, boje i animaciju pozadine */
+section { 
+    /*širina*/
+    width: 100%; 
+    /*visina*/
+    height:100vh;
+    /*boja slova bijela*/
+    color:#fff; 
     background: linear-gradient(45deg, #EE7752, #E73C7E, #2EA6D5, #23D5AB);
     background-size: 400% 400%;
     position: relative;
     animation: change 10s ease-in-out infinite;
 }
 
+
+/*uređuje ivona crnković software tester*/
 h1{
-    font-size:5rem;
-    letter-spacing: 2px;/*razmak između slova*/
-    border: 3px solid #fff;/*okvir*/
+    font-size:5em;
+    /*razmak između slova*/
+    letter-spacing: 2px;
+    /*okvir debljina i boja*/
+    border: 3px solid #fff;
     position: absolute;
+    /*centrira okvir s tekstom*/
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    padding: 5rem 10rem;
-
+    /*odmaknuli od vrha, dna, sa svih strana*/
+    padding:20px 150px 5px;
 }
+
+/*strelica na headeru*/
+.down {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    fill: #fff;
+    -webkit-animation: pulse 1.3s infinite;
+    animation: pulse 1.3s infinite;
+ }
+
+
+
 
 h2{
     font-size:5rem;
@@ -63,7 +106,8 @@ li{
 
 body{
     margin:0;
-    line-height: 1.1;/*određuje širinu bijelog obruba*/
+    /*određuje širinu bijelog obruba*/
+    line-height: 1.1;
 }
 
 
@@ -77,9 +121,12 @@ body{
     display: block;
     width: 30px;
     height: 30px;
-    border-bottom: 5px solid #efefef;/*kreira crtu određene debljine*/
-    border-right: 5px solid #efefef;/*kreira crtu određene debljine*/
-    transform: rotate(45deg);/*rotira za određeno stupnjeva*/
+    /*kreira crtu određene debljine*/
+    border-bottom: 5px solid #efefef;
+    /*kreira crtu određene debljine*/
+    border-right: 5px solid #efefef;
+    /*rotira kreirane crte za određeno stupnjeva*/
+    transform: rotate(45deg);
     margin: -10p;
     animation: scroll 2s infinite;
 }
