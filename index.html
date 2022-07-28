@@ -2,61 +2,40 @@
 <html lang="en">
 
 <head>
-    <title>IvonaCrnkovic_CV</title>
+    <title>IvonaCrnkovic_project</title>
+    <!--linkom povezujem html sa css-om, točnije css fileom-->
     <link rel="stylesheet" href="bio.css" />
 
     <style type="text/css">
         /*korišten internal css i komentiranje za css*/
         .ime {
-            text-transform: uppercase;
             /*velika slova za ime i prezime*/
+            text-transform: uppercase;
+            /*centrirano*/
+            text-align: center;
         }
 
         .zanimanje {
-            text-align: center;
             /*softver tester centrirano*/
+            text-align: center;
         }
 
         .head-icons {
             display: flex;
-            justify-content: center;
             /*centrira*/
+            justify-content: center;
             position: absolute;
-            width: 80%;
-            /*lijevo-desno*/
+             /*lijevo-desno*/
+            max-width: 70%;
+           /*gore-dolje*/
             top: 47%;
-            /*gore-dolje*/
-            left: 10%;
             /*lijevo-desno*/
+            left: 15%;
             margin: 0 auto;
-            transform: scale(.20);
             /*veličina ikonica*/
+            transform: scale(.20);
         }
-
-        .down {
-            position: absolute;
-            bottom: 25px;
-            width: 100%;
-            margin: 0 auto;
-            display: block;
-            font-size: 30px;
-            cursor: pointer;
-            color: #fff;
-            text-align: center;
-
-            position: absolute;
-            -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            width: 100px;
-            height: 100px;
-            fill: #fff;
-            -webkit-animation: pulse 1.3s infinite;
-            animation: pulse 1.3s infinite;
-        }
+           
 
         #main-footer {
             text-align: center;
@@ -70,38 +49,38 @@
 </head>
 
 <body>
+
     <section>
         <article>
+                <!--h1 je naslov koji uređujem external css-om-->
+                <a href="#aboutMe" class="main-btn">
+                    <h1>
+                        <div class="ime">Ivona Crnković</div>
+                        <!--pomoću diva odvajam sekcije koje uređujem sa internal css-->
+                        <div class="zanimanje">software tester</div>
+                    </h1>
+                </a>
 
-            <!--h1 je naslov koji uređujem external css-om-->
-            <a href="#aboutMe" class="main-btn">
-                <h1>
-                    <div class="ime">Ivona Crnković</div>
-                    <!--pomoću diva odvajam sekcije koje uređujem sa internal css-->
-                    <div class="zanimanje">software tester</div>
-                </h1>
-            </a>
-
-            <!--ikonice linkedin, github, resume, mail-->
-            <div class="head-icons">
-                <a aria-label="My LinkedIn Profile" target="_blank"
-                    href="https://www.linkedin.com/in/ivona-crnkovi%C4%87/"><img src="linkedin.png"
-                        alt="My sample image"></a>
-                <a aria-label="My GitHub Profile" target="_blank" href="https://github.com/CrnkovicIvona"><img
-                        src="github.png" alt="My sample image"></a>
-                <a aria-label="My Resume" target="_blank" href="#"></a>
-                <a aria-label="Send Mail" target="_blank" href="#"></a>
-            </div>
+                <!--ikonice linkedin, github, resume, mail-->
+                <div class="head-icons">
+                    <a aria-label="My LinkedIn Profile" target="_blank"
+                        href="https://www.linkedin.com/in/ivona-crnkovi%C4%87/"><img src="linkedin.png"
+                            alt="My sample image"></a>
+                    <a aria-label="My GitHub Profile" target="_blank" href="https://github.com/CrnkovicIvona"><img
+                            src="github.png" alt="My sample image"></a>
+                    <a aria-label="My Resume" target="_blank" href="#"></a>
+                    <a aria-label="Send Mail" target="_blank" href="#"></a>
+                </div>
 
             <a href="#aboutMe">
                 <div class="arrow">
+                    <!--koliko puta kopiram, toliko ću imati strelica-->
                     <span></span>
-                    <!--koliko puta ovaj dio kopiram, toliko ću imati strelica-->
                 </div>
             </a>
-
         </article>
     </section>
+
 
     <main>
         <div id="aboutMe">
@@ -150,8 +129,9 @@
         </div>
 
     </main>
-
-    <footer id="main-footer"><!--id je unique-->
+    <!--id je unique-->
+    <footer id="main-footer">
+            <!--godina je uvijek tekuća-->
             <script>
                 const d= new Date (); 
                 document.getElementById('main-footer').innerHTML='Copyright &copy;'+d.getFullYear()+ ', Ivona Crnković';
