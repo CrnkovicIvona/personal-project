@@ -1,149 +1,151 @@
-<!DOCTYPE html><!--html mora započeti ovako-->
+<!DOCTYPE html>
+<!--html mora započeti ovako-->
 <!--jezik stranice-->
 <html lang="en">
-<meta charset="utf-8"/>
+<meta charset="utf-8" />
 
-    <head> 
-        <title>IvonaCrnkovic_project</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--linkom povezujem html sa css-om, točnije css fileom-->
-        <link rel="stylesheet" href="bio.css" />
-        <style type="text/css">
+<head>
+    <title>IvonaCrnkovic_project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--linkom povezujem html sa css-om, točnije css fileom-->
+    <link rel="stylesheet" href="bio.css" />
+    <style type="text/css">
+        /*korišten internal css i komentiranje za css*/
+        .ime {
+            /*velika slova za ime i prezime*/
+            text-transform: uppercase;
+            /*centrirano*/
+            text-align: center;
+        }
 
-            /*korišten internal css i komentiranje za css*/
-            .ime {
-                /*velika slova za ime i prezime*/
-                text-transform: uppercase;
-                /*centrirano*/
-                text-align: center;
-            }
+        .zanimanje {
+            /*softver tester centrirano*/
+            text-align: center;
+        }
 
-            .zanimanje {
-                /*softver tester centrirano*/
-                text-align: center;
-            }
-
-            #main-footer {
-                /*poravnat tekst u sredinu*/
-                text-align: center;
-                /*uz pomoć paddinga centriram vertikalno i horizontalno tekst*/
-                padding-top: 5vh;
-                padding-bottom: 2vh;
-                font-size:1.2em;
-                /*širina pozadine*/
-                width: 100%;
-                /*visina pozadine*/
-                height:4vh;
-                color:#fff;
-                background: linear-gradient(45deg, #EE7752, #E73C7E, #2EA6D5, #23D5AB);
-                background-size: 400% 400%;
-                position: relative;
-                animation: change 10s ease-in-out infinite
-            }
-        </style>
-    </head>
+        #main-footer {
+            /*poravnat tekst u sredinu*/
+            text-align: center;
+            /*uz pomoć paddinga centriram vertikalno i horizontalno tekst*/
+            padding-top: 5vh;
+            padding-bottom: 2vh;
+            font-size: 1.2em;
+            /*širina pozadine*/
+            width: 100%;
+            /*visina pozadine*/
+            height: 4vh;
+            color: #fff;
+            background: linear-gradient(45deg, #EE7752, #E73C7E, #2EA6D5, #23D5AB);
+            background-size: 400% 400%;
+            position: relative;
+            animation: change 10s ease-in-out infinite
+        }
+    </style>
+</head>
 
 
-    <body>
-        <section>
-                <!--IME, PREZIME I ZANIMANJE U OKVIRU-->
-                <div>
-                    <!--a je link-->
-                    <a href="#aboutMe" class="main-btn">
-                        <!--h1 je naslov koji uređujem external css-om-->
-                        <h1>
-                            <div class="ime">Ivona Crnković</div>
-                            <!--pomoću diva odvajam sekcije koje uređujem sa internal css-->
-                            <div class="zanimanje">software tester</div>
-                        </h1>
-                    </a>
-                </div>
+<body>
+    <div class="section">
 
-                    <!--IMAGE/BUTTON linkedin i github-->
-                    <div class="container">
-                        <div class="head-icons">
-                            <div>
-                                <a aria-label="My LinkedIn Profile" target="_blank"
-                                href="https://www.linkedin.com/in/ivona-crnkovi%C4%87/"><img src="linkedin.png"
-                                alt="My sample image">
-                                </a>
-                            </div>
-                            <div>
-                                <a aria-label="My GitHub Profile" target="_blank" href="https://github.com/CrnkovicIvona"><img
-                                src="github.png" alt="My sample image">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+        <!--IME, PREZIME I ZANIMANJE U OKVIRU-->
+        <div>
+            <!--a je link-->
+            <a href="#aboutMe" class="main-btn">
+                <!--h1 je naslov koji uređujem external css-om-->
+                <h1>
+                    <div class="ime">Ivona Crnković</div>
+                    <!--pomoću diva odvajam sekcije koje uređujem sa internal css-->
+                    <div class="zanimanje">software tester</div>
+                </h1>
+            </a>
+        </div>
 
-                <!--STRELICA-->
-                <a href="#aboutMe">
-                    <div class="arrow">
-                        <!--koliko puta kopiram, toliko ću imati strelica-->
-                        <span></span>
-                    </div>
+
+        <!--IMAGE/BUTTON linkedin i github-->
+        <div class="head-icons">
+            <div>
+                <a aria-label="My LinkedIn Profile" target="_blank"
+                    href="https://www.linkedin.com/in/ivona-crnkovi%C4%87/"><img src="linkedin.png"
+                        alt="My sample image">
                 </a>
-        </section>
+            </div>
+            <div>
+                <a aria-label="My GitHub Profile" target="_blank" href="https://github.com/CrnkovicIvona"><img
+                        src="github.png" alt="My sample image">
+                </a>
+            </div>
+        </div>
 
-        <!--O MENI-->
-        <main>
+
+        <!--STRELICA-->
+        <a href="#aboutMe">
+            <div class="arrow">
+                <!--koliko puta kopiram, toliko ću imati strelica-->
+                <span></span>
+            </div>
+        </a>
+
+    </div>
+
+    <!--O MENI-->
+    <main>
+        <div class="block">
             <div id="aboutMe">
                 <h2>
                     About me
                 </h2>
                 <p>
-                    Hi! My name is Ivona, junior <abbr title="Synonyms: SDET, Software Test Engineer, Software QA Engineer, Software Quality Engineer, Applications Tester, QA Tester etc.">software tester</abbr> from Croatia.
+                    Hi! My name is Ivona, junior <abbr
+                        title="Synonyms: SDET, Software Test Engineer, Software QA Engineer, Software Quality Engineer, Applications Tester, QA Tester etc.">software
+                        tester</abbr> from Croatia.
                 </p>
                 <br>
                 <p>
-                    This page is my personal project to showcase my self-taught basic knowledge of HTML, CSS and JavaScript.
+                    This page is my personal project to showcase my self-taught basic knowledge of HTML, CSS and
+                    JavaScript.
                 </p>
             </div>
+        </div>
 
-            <!--AVATAR-->
+        <!--AVATAR-->
+        <div class="block">
             <div class="avatar">
                 <img src="avatar.1.png" alt="avatar">
             </div>
-        
-            <!--SKILOVI-->
+        </div>
+
+        <!--SKILOVI-->
+        <div class="block">
             <div class="sidebar">
                 <h2>
                     Skills
                 </h2>
                 <br>
                 <li>Advanced SQL</li>
-                <br>
                 <li>Manual testing</li>
-                <br>
                 <li>BUG reporting</li>
-                <br>
                 <li>SoapUI</li>
-                <br>
                 <li>Writing application documentation</li>
-                <br>
                 <li>Test Case and Test Scenario</li>
-                <br>
                 <li>Basic CSS, HTML and JavaScript</li>
-                <br>
                 <li>Canva</li>
-                <br>
                 <li>Basic GIT</li>
-                <br>
                 <li>Digital marketing</li>
-                <br>
                 <li>Business correspondence</li>
             </div>
-
-        </main>
-    </body>
+        </div>
+    </main>
 
     <!--FOOTER, id je unique-->
     <footer id="main-footer">
-            <!--godina je uvijek tekuća-->
-                <script>
-                    const d= new Date (); 
-                    document.getElementById('main-footer').innerHTML='Copyright &copy;'+ d.getFullYear() + ', Ivona Crnković';
-                </script>
+        <!--godina je uvijek tekuća-->
+        <script>
+            const d = new Date();
+            document.getElementById('main-footer').innerHTML = 'Copyright &copy;' + d.getFullYear() + ', Ivona Crnković';
+        </script>
     </footer>
-    
-    
+    </div>
+</body>
+
+
+</html>

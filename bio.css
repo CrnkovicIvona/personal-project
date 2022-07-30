@@ -3,9 +3,10 @@
 /*font Lato, font se može učitati i preko linka sa font.google.com, link se samo kopira i zalijepi*/
 @import "https://fonts.googleapis.com/css?family=Lato:100";
 
-/*fontovi za cijeli page*/
-*{
-    font-family:"Lato", Helvetica;
+/*fontovi za cijeli page i bez margina*/
+* {
+    font-family: "Lato", Helvetica;
+    margin: 0;
 }
 
 /*određeno ponašanje prijelaza*/
@@ -13,38 +14,44 @@ html {
     scroll-behavior: smooth;
 }
 
+.container {
+    width: 100%;
+    margin: auto;
+}
+
 /*odredila širinu i visinu da stane potpuno u prvi prikaz, boje i animaciju pozadine */
-section { 
+.section {
     /*širina*/
-    width: 100%; 
+    width: 100%;
     /*visina*/
-    height:100vh;
+    height: 100vh;
     /*boja slova bijela*/
-    color:#fff; 
+    color: #fff;
     background: linear-gradient(45deg, #EE7752, #E73C7E, #2EA6D5, #23D5AB);
     background-size: 400% 400%;
     animation: change 10s ease-in-out infinite;
 }
 
+
 .main-btn {
-    text-decoration:none I !important;
+    text-decoration: none I !important;
     color: white;
 }
 
 /*uređuje ivona crnković software tester*/
-h1{
-    font-size:3rem;
+h1 {
+    font-size: 3rem;
     /*razmak između slova*/
     letter-spacing: 2px;
     /*okvir debljina i boja*/
     border: 3px solid #fff;
     position: absolute;
     /*centrira okvir s tekstom*/
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     /*odmaknuli od vrha, dna, sa svih strana*/
-    padding:20px 150px 5px;
+    padding: 20px 150px;
 }
 
 
@@ -53,13 +60,6 @@ h1{
     display: flex;
     /*centrirano drži*/
     justify-content: center;
-    position: absolute;
-     /*lijevo-desno*/
-    max-width: 70%;
-   /*gore-dolje*/
-    top: 47%;
-    /*lijevo-desno*/
-    left: 15%;
     /*veličina ikonica*/
     transform: scale(.20);
 }
@@ -88,14 +88,15 @@ h1{
     fill: #fff;
     -webkit-animation: pulse 1.3s infinite;
     animation: pulse 1.3s infinite;
- }
- .arrow{
+}
+
+.arrow {
     position: absolute;
-    top:93%;
+    top: 93%;
     left: 50%;
 }
 
-.arrow span{
+.arrow span {
     display: block;
     width: 30px;
     height: 30px;
@@ -109,87 +110,85 @@ h1{
     animation: scroll 2s infinite;
 }
 
-.arrow span:nth-child(2){
-    animation:-.2 ;
+.arrow span:nth-child(2) {
+    animation: -.2;
 }
 
 main {
     display: flex;
     /*širina pozadine*/
     width: 100%;
-    /*visina pozadine koja sa footerom čini 100*/
-    height:94vh;
-    l
+    /*visina pozadine koja sa footerom čini 100, stavljeno min kako bi bilo responzivno*/
+    min-height: 94vh;
 }
 
-h2{
-    font-size:3rem;
+h2 {
+    font-size: 3rem;
     text-align: center;
     color: rgb(0, 0, 0);
     margin-bottom: 1cm;
 }
 
-P,li{
+P,
+li {
     font-family: Helvetica;
-    font-size:16px;
-    letter-spacing:1px;
+    font-size: 16px;
+    letter-spacing: 1px;
     color: rgb(0, 0, 0);
+    line-height:1.6em ;
 }
 
-#aboutMe{
-    width: 30%;
-    margin-top: 10em;
-    margin-left: 10em;
-    line-height: 1cm;
+.block {
+    float: left;
+    width: 33.3%;
+    margin: auto;
+    box-sizing: border-box;
 }
 
-.avatar{
-    position:absolute;
-    top:110%;
-    left:40%;
+#aboutMe {
+    margin-left: 5em;
 }
 
-.sidebar{
-    width: 30%;
+.avatar {
+    margin-left: 5em;
+}
+
+.sidebar {
     border: 3px solid #000;
     /*obli kutovi*/
     border-radius: 70px;
-    padding: 2rem 2rem;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 30em;
-    margin-right: 10em;
+    padding: 4em;
+    box-sizing: border-box;
+    margin-right: 5em;
 }
 
-body{
-    margin:0;
-    /*određuje širinu bijelog obruba*/
-    line-height: 1.1;
-}
 
 @keyframes scroll {
-    0%{
+    0% {
         opacity: 0;
         transform: rotate(45deg) translate(-20px, -20px);
     }
-    50%{
+
+    50% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 0;
         transform: rotate(45deg) translate(20px, 20px);
     }
 }
 
 @keyframes change {
-    0%{
-        background-position:0 50% ;
+    0% {
+        background-position: 0 50%;
     }
-    50%{
-        background-position: 100% 50% ;
+
+    50% {
+        background-position: 100% 50%;
     }
-    100%{
-        background-position:0 50% ;
+
+    100% {
+        background-position: 0 50%;
     }
 }
-
