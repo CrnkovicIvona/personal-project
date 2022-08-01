@@ -113,7 +113,7 @@ h1 {
 
 @media screen and (max-width: 1280px) {
     .head-icons{
-     top:72%
+     top:75%
     }
 }
 
@@ -128,7 +128,7 @@ h1 {
 
 @media screen and (max-width: 1024px) {
     .head-icons{
-     top:72%
+     top:75%
     }
     .icons{
         font-size: 4em;
@@ -138,14 +138,11 @@ h1 {
 
 @media screen and (max-width: 990px) {
     .head-icons{
-     top:70%
+     top:72%
     }
     .icons{
-        font-size: 4em;
+        font-size: 5em;
     }
-    
-
-
 }
 
 @media screen and (max-width: 870px) {
@@ -153,7 +150,7 @@ h1 {
      top:70%
     }
     .icons{
-        font-size: 4em;
+        font-size: 5em;
     }
 }
 
@@ -186,18 +183,28 @@ h1 {
     }
 }
 
-@media screen and (max-width: 309px) {
+@media screen and (max-width: 320px) {
     .head-icons{
-     top:66%
+     top:71%
     }
     .icons{
         font-size: 4em;
     }
 }
 
+@media screen and (max-width: 309px) {
+    .head-icons{
+     top:69%
+    }
+    .icons{
+        font-size: 4em;
+    }
+}
+
+
 @media screen and (max-width: 280px) {
     .head-icons{
-     top:66%
+     top:69%
     }
     .icons{
         font-size: 4em;
