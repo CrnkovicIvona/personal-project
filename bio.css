@@ -87,7 +87,7 @@ h1 {
     /*veličina ikonica*/
     margin: auto;
     position: absolute;
-    top: 67%;
+    top: 69%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -107,7 +107,7 @@ h1 {
 
 @media screen and (max-width: 1409px) {
     .head-icons{
-     top:71%
+     top:74%
     }
 }
 
@@ -155,9 +155,18 @@ h1 {
 }
 
 
+@media screen and (max-height: 700px) {
+    .head-icons{
+     top:80%
+    }
+    .icons{
+        font-size: 4em;
+    }
+}
+
 @media screen and (max-width: 650px) {
     .head-icons{
-     top:70%
+     top:80%
     }
     .icons{
         font-size: 4em;
@@ -167,12 +176,14 @@ h1 {
 
 @media screen and (max-width: 540px) {
     .head-icons{
-     top:69%
+     top:72%
     }
     .icons{
         font-size: 4em;
     }
 }
+
+
 
 @media screen and (max-width: 375px) {
     .head-icons{
