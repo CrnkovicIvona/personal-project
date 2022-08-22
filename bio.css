@@ -1,5 +1,6 @@
 /*CSS tools: reset CSS mogu koristiti kako bi maknula deafultne stilove browsera, c/p sa stranice i uređujem po tome*/
 
+
 * {
     font-family: "Roboto";
 }
@@ -277,6 +278,11 @@ h2 {
     text-align: center;
     color: rgb(0, 0, 0);
     margin-bottom: 1cm;
+    color: var(--pink);
+    background: linear-gradient(45deg, #EE7752, #E73C7E, #2EA6D5, #23D5AB);
+    /*boja pozdaine se odnosi na tekst*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 P,
