@@ -276,13 +276,19 @@ main {
 h2 {
     font-size: 3rem;
     text-align: center;
-    color: rgb(0, 0, 0);
     margin-bottom: 1cm;
     color: var(--pink);
-    background: linear-gradient(45deg, #EE7752, #E73C7E, #2EA6D5, #23D5AB);
+    background: linear-gradient(45deg, #EE7752, #E73C7E, #2EA6D5);
     /*boja pozdaine se odnosi na tekst*/
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+h3{
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 1cm;
 }
 
 P,
