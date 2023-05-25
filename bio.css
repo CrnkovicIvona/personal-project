@@ -81,7 +81,7 @@ h1 {
 
 
 .head-icons {
-    /*ikonice su vodoravno, jedna pored druge*/
+    /*ikonice su vodoravno, jedna pored druge
     display: flex;
     /*centrirano drži*/
     justify-content: center;
@@ -89,7 +89,7 @@ h1 {
     margin: auto;
     position: absolute;
     top: 69%;
-    left: 50%;
+    left: 49%;
     transform: translate(-50%, -50%);
 }
 
